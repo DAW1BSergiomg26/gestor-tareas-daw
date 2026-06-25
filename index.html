@@ -1,12 +1,69 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gestor de tareas DAW con HTML, CSS y JavaScript. Permite crear, completar, filtrar y borrar tareas guardadas en localStorage.">
   <title>Gestor de Tareas DAW</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>Gestor de Tareas DAW</h1>
-  <p>Proyecto inicial.</p>
+  <main class="app-shell">
+    <section class="hero-card">
+      <p class="eyebrow">JavaScript · DOM · localStorage</p>
+      <h1>Gestor de Tareas DAW</h1>
+      <p>
+        Mini app para practicar eventos, arrays, objetos y almacenamiento local. Es sencilla, pero ya funciona como una aplicación real.
+      </p>
+      <div class="stats" aria-label="Resumen de tareas">
+        <article>
+          <span id="totalTasks">0</span>
+          <small>Total</small>
+        </article>
+        <article>
+          <span id="pendingTasks">0</span>
+          <small>Pendientes</small>
+        </article>
+        <article>
+          <span id="doneTasks">0</span>
+          <small>Hechas</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="task-panel" aria-labelledby="formTitle">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Nueva tarea</p>
+          <h2 id="formTitle">Organiza tu práctica</h2>
+        </div>
+        <button id="clearDoneBtn" class="ghost-btn" type="button">Limpiar hechas</button>
+      </div>
+
+      <form id="taskForm" class="task-form">
+        <label class="sr-only" for="taskInput">Escribe una tarea</label>
+        <input id="taskInput" type="text" placeholder="Ej: practicar eventos en JavaScript" maxlength="90" autocomplete="off">
+        <button type="submit">Añadir</button>
+      </form>
+
+      <div class="filters" role="group" aria-label="Filtros de tareas">
+        <button class="filter-btn active" type="button" data-filter="all">Todas</button>
+        <button class="filter-btn" type="button" data-filter="pending">Pendientes</button>
+        <button class="filter-btn" type="button" data-filter="done">Completadas</button>
+      </div>
+
+      <ul id="taskList" class="task-list" aria-live="polite"></ul>
+      <p id="emptyState" class="empty-state">Todavía no hay tareas. Añade una para empezar.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Proyecto DAW · HTML · CSS · JavaScript · localStorage</p>
+  </footer>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
