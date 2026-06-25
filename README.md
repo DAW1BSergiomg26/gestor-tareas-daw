@@ -2,6 +2,11 @@
 
 Proyecto sencillo de práctica para crear, completar, filtrar y eliminar tareas usando **HTML**, **CSS** y **JavaScript**.
 
+## URL pública
+
+- Web publicada: https://daw1bsergiomg26.github.io/gestor-tareas-daw/
+- Repositorio: https://github.com/DAW1BSergiomg26/gestor-tareas-daw
+
 ## Objetivo
 
 Practicar lógica básica de JavaScript, manipulación del DOM, eventos, arrays, objetos y almacenamiento local con `localStorage`.
@@ -25,12 +30,18 @@ Practicar lógica básica de JavaScript, manipulación del DOM, eventos, arrays,
 - localStorage
 - Git
 - GitHub
+- GitHub Pages
+- SEO básico
 
 ## Estructura
 
 ```text
 gestor-tareas-daw/
 ├─ index.html
+├─ favicon.svg
+├─ robots.txt
+├─ sitemap.xml
+├─ site.webmanifest
 ├─ css/
 │  └─ styles.css
 ├─ js/
@@ -38,6 +49,24 @@ gestor-tareas-daw/
 └─ README.md
 ```
 
+## SEO base
+
+La fase SEO añade:
+
+- `favicon.svg`
+- `site.webmanifest`
+- `robots.txt`
+- `sitemap.xml`
+- Metadatos básicos Open Graph y Twitter Card
+- URL canonical
+
+## Flujo Git
+
+- `main` se mantiene como rama estable.
+- Las mejoras se trabajan en ramas `feature/*`.
+- Se prueba antes de hacer merge.
+- Los checkpoints importantes se guardan con tags.
+
 ## Estado
 
-Primera versión funcional en desarrollo sobre rama `feature/base-gestor-tareas-v1`.
+Gestor de Tareas DAW publicado en GitHub Pages con base funcional y SEO inicial.
