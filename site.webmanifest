@@ -1,0 +1,10 @@
+{
+  "name": "Gestor de Tareas DAW",
+  "short_name": "Tareas DAW",
+  "description": "Mini app de tareas creada con HTML, CSS, JavaScript y localStorage.",
+  "start_url": "/gestor-tareas-daw/",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "lang": "es"
+}
